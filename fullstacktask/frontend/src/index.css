@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .input {
+    @apply w-full p-2 border rounded focus:outline-none focus:ring;
+  }
+
+  .btn {
+    @apply px-4 py-2 rounded text-white bg-blue-600 hover:bg-blue-700;
+  }
+
+  .btn-danger {
+    @apply px-4 py-2 rounded text-white bg-red-600 hover:bg-red-700;
+  }
+
+  .card {
+    @apply p-4 bg-white rounded shadow;
+  }
+
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0.6;
+    cursor: pointer;
+  }
+
+  input[type="date"] {
+    appearance: none;
+  }
+}
